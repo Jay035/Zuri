@@ -1,0 +1,112 @@
+body{
+    font-family: arial,sans-serif;
+    color: #222;
+    font-size: 14px; 
+}
+body,p{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    margin-left: auto;
+    padding: 2em;
+}
+nav a{
+    padding-right:0 ;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+nav img{
+   height:20px ;
+   cursor: pointer;
+}
+nav img:hover{
+    height:18px ;
+}
+main{
+    width: 50%;
+    margin:5em auto;
+    text-align: center;
+}
+.logo{
+    width: 50%;
+    height:18vh;
+    margin: auto;
+}
+input{
+    width: 80%;
+    padding: 1em 2em;
+    border-radius:10px;
+    border: 1px solid grey;
+}
+.Search{
+    position: absolute;
+    left: 28%;
+    top: 42%;
+    width: 2%;
+    
+}
+input:hover{
+    box-shadow:3px 3px 5px 6px #ccc;
+}
+.btn{
+    margin-top: 1em;
+}
+.btn button{
+    padding: 1em;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    margin: 0 .3em;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn button:hover{
+   border:1px ridge gray;
+   border-radius: 10px;
+}
+.lang{
+    margin-top: 3em;
+}
+.lang a{
+    padding: 0 .3em;
+    text-decoration: none;
+    color: rgb(56, 56, 250);
+}
+.lang a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: rgb(236, 235, 235);
+    margin-top: 9.5em;
+    padding:0 1em;
+    color: gray;
+}
+footer a{
+    color: gray;
+}
+.footer-top{
+    padding: 1em;
+}
+
+.footer-bottom{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(204, 202, 202);
+}
+.left a{
+    margin-right: 1em;
+}
+.right a{
+    margin-right: 1em;
+}
