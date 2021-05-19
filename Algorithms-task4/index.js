@@ -21,7 +21,7 @@ convertFahrToCelsius = (parameter) => {
         else if(typeof parameter == 'number'){
             let F = Number(parameter);
             let C = (F-32)*(5/9);
-            console.log(C.toFixed(4) + ' ' + '\u00B0C');
+            console.log(C.toFixed(4));
         }
          if(parameter == true || parameter == false ) {
             console.log(parameter, ` is not a valid number but a/an Boolean`)
@@ -29,8 +29,7 @@ convertFahrToCelsius = (parameter) => {
         
     }
 }
-convertFahrToCelsius();
-
+convertFahrToCelsius(10);
   
   
 checkYuGiOh = (n) => {
@@ -42,8 +41,8 @@ checkYuGiOh = (n) => {
         let regex = /[a-zA-Z]/;
         regexResult = regex.test(n)
         if (regexResult === true && typeof n !== 'object' || Array.isArray(n) === true || typeof n === 'object' && typeof n !== null && !Array.isArray(n)) {
-        const invalidReponse = `invalid parameter.${n}`;
-            console.log(invalidReponse);
+        const invalidReponse = `invalid parameter ` + JSON.stringify( `${n}`);
+            console.error(invalidReponse);
         }
         else{
             let num = Number(n);
