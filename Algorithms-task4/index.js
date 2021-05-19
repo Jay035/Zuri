@@ -1,28 +1,36 @@
 
 convertFahrToCelsius = (parameter) => {
     if (parameter == null){
-        console.log('Please input a value for conversion')
+        let nullInfo = 'Please input a value for Conversion';
+        console.log(nullInfo);
     }
     else {
         let regex = /[a-zA-Z]/;
         regexResult = regex.test(parameter);
-        if(regexResult == true && typeof parameter !=='object' && parameter !== null){
-            console.log(`${parameter} is not a valid number but a/an string`);
+        if(regexResult == true && typeof parameter !=='object' && typeof parameter !=='boolean' && parameter !== null){
+            console.log(parameter, `is not a valid number but a/an string`);
         }
         else if(Array.isArray(parameter) === true){
-            console.log(`${parameter} is not a valid number but a/an array`)
+            console.log(parameter, ` is not a valid number but a/an array`)
         }
         else if(typeof parameter === 'object' && typeof parameter !== null && !Array.isArray(parameter) ){
             console.log(parameter, ` is not a valid number but a/an object`)
         }
-        else{
+        
+        
+        else if(typeof parameter == 'number'){
             let F = Number(parameter);
             let C = (F-32)*(5/9);
             console.log(C.toFixed(4) + ' ' + '\u00B0C');
         }
+         if(parameter == true || parameter == false ) {
+            console.log(parameter, ` is not a valid number but a/an Boolean`)
+        }
+        
     }
 }
 convertFahrToCelsius();
+
   
   
 checkYuGiOh = (n) => {
