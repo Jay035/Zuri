@@ -5,7 +5,7 @@ convertFahrToCelsius = (parameter) => {
         return nullInfo;
     }
     else {
-        let F = Number(parameter);
+        let F =  Number(parameter);
         let C = ((F-32)*(5/9)).toFixed(4);
         let regex = /[a-zA-Z]/;
         regexResult = regex.test(parameter);
@@ -19,17 +19,19 @@ convertFahrToCelsius = (parameter) => {
             return (`${JSON.stringify(parameter)},  is not a valid number but a/an object`)
         }
         
-        
-        else if(typeof parameter == 'number'){
-            return C;
-        }
-         if(parameter == true || parameter == false)  {
+        else if(parameter == true || parameter == false)  {
             return (`${JSON.stringify(parameter)}, is not a valid number but a/an Boolean`)
         }
+        else if(parameter == '')  {
+            return (console.log(`${parameter}, is empty`))
+        }
+        else {
+            return C;
+        }
         
-    } 
+    }
 }
-// console.log(convertFahrToCelsius());
+ //console.log(convertFahrToCelsius());
 
 
 checkYuGiOh = (n) => {
@@ -80,4 +82,4 @@ checkYuGiOh = (n) => {
         }
      }
     }
-//  console.log(checkYuGiOh());
+  //console.log(checkYuGiOh('fizaad'));
