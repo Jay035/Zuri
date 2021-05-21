@@ -82,4 +82,4 @@ checkYuGiOh = (n) => {
         }
      }
     }
-  //console.log(checkYuGiOh('fizaad'));
+  //console.log(checkYuGiOh());
