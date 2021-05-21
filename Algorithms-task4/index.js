@@ -6,7 +6,7 @@ convertFahrToCelsius = (parameter) => {
     }
     else {
         let F = Number(parameter);
-        let C = (F-32)*(5/9).toFixed(4);
+        let C = ((F-32)*(5/9)).toFixed(4);
         let regex = /[a-zA-Z]/;
         regexResult = regex.test(parameter);
         if(regexResult == true && typeof parameter !=='object' && typeof parameter !=='boolean' && parameter !== null){
@@ -21,7 +21,7 @@ convertFahrToCelsius = (parameter) => {
         
         
         else if(typeof parameter == 'number'){
-            return C.toFixed(4);
+            return C;
         }
          if(parameter == true || parameter == false)  {
             return (`${JSON.stringify(parameter)}, is not a valid number but a/an Boolean`)
