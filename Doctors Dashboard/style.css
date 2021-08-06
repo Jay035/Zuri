@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 22% auto;
+    font-size: 24px;
+    width: 100%;
+}
+#side-bar{
+   /* width: 35%; */
+   background-color: #303a5f;
+   min-height: 100vh;
+   padding: 1rem;
+   
+}
+.side-menu > div{
+    margin-top: .8em;
+    padding-left: .8em;
+    position: relative;
+}
+#main{
+    background: rgba(48, 58, 95, 0.1);
+    overflow-x: hidden;
+    padding-bottom: 1rem;
+}
+nav{
+    display: flex;
+    margin-top: .7em;
+}
+#main nav h3{
+    display: inline-block;
+    width: 40%;
+    padding-left: 1.5rem;
+}
+nav a{
+    color: black;
+    width: 12%;
+}
+#alert{
+    margin-left: 9em;
+}
+span{
+    position: relative;
+    top: -.2em;
+    color: #303a5f;
+}
+.side-dot{
+    position: absolute;
+    left: 71.8%;
+    right: 28.64%;
+    top: 3.2%;
+    bottom: 94.31%;
+    
+}
+.bottom-dot{
+    position: absolute;
+    left: 71.35%;
+    right: 29.89%;
+    top: 7%;
+    bottom: 92.46%;
+    
+}
+.bio,.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo h2{
+    color: white;
+    font-size: 48px;
+    line-height: 72px;
+}
+.doctors-pics{
+    width: 100%;
+    margin: 2em auto .5em;
+    display:flex ;
+    justify-content: center;
+}
+.bio h3{
+    color: white;
+    text-align: center;
+}
+.bio p{
+    color: #48d5b3;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.dashboard{
+    background-color:  #48d5b3;
+    padding: .5rem;
+    width: 110%;
+    border-radius: 10px;
+    
+}
+#L{
+    position: absolute;
+    left: 11%;
+    right: 94.76%;
+    top: 10%;
+    bottom: 45%;
+}
+#second-block{
+    position: absolute;
+    left: 10.5%;
+    right: 94.76%;
+    bottom: 43.94%;
+}
+#second-L{
+    position: absolute;
+    left: 14.5%;
+    right: 94.76%;
+    top: -12%;
+    bottom: 45%
+}
+footer{
+    padding-left: .8em;
+    position: absolute;
+    top: 160%;
+    bottom: 0;
+}
+#boxes{
+    display: grid;
+    grid-template-columns: 25% 26% 25% 25%;
+    grid-gap: 25px;
+    width:100%;
+    margin: 1.5em 1em;
+    padding-right: 8.5rem;
+}
+.box{
+    background-color: white;
+    border-radius: 10px;
+    width: 240px;
+    height: 130px;
+    padding:1.5rem .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+}
+.box p,.box h3{
+    text-align: center;
+}
+#appointments{
+    width: 250px;
+}
+.icon{
+    text-align: center;
+    padding-top: .7rem;
+    width: 60px;
+    height: 50px;
+    float: left;
+}
+.iconn{
+    margin-left: 1em;
+}
+.one{
+    background: rgba(48, 58, 95, 0.31);
+    border-radius: 10px;
+}
+.two{
+    background: rgba(255, 44, 83, 0.31);
+    border-radius: 10px;
+    margin-left: .5em;
+}
+.three{
+    background: rgba(69, 11, 90, 0.31);
+    border-radius: 10px;
+}
+.four{
+    background: rgba(70, 213, 179, 0.31);
+    border-radius: 10px;
+}
+
+#ongoing,#accepted{
+    background-color: rgba(198, 242, 231, 0.45);;
+}
+#appointments-contacts,#appointment_support{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 1rem;
+}
+#appointments-contacts .title{
+    padding-bottom: .8rem;
+}
+#appointments-contacts p,#appointment_support p,#accepted{
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 27px;
+}
+.appointments,.contacts,.container{
+    width: 460px;
+    margin: 1em auto;
+}
+.appointments-table,.contacts-table,.requests-table,.container{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: .7rem;
+    display: flex;
+    flex-direction: column;
+}
+.contacts{
+    width: 32.5rem;
+}
+.contacts,.requests{
+    height: 26.9375rem;
+}
+.requests{
+    width: 475px;
+}
+.support{
+    padding-top: 1.7rem;
+}
+.requests-table{
+    height: 26.5rem!important;
+}
+.container{
+    height: 27rem;
+    width: 32.5rem;
+}
+
+.contacts-table,.requests-table{
+    height: 22rem;
+    overflow-y: scroll;
+}
+.chats::-webkit-scrollbar,.contacts-table::-webkit-scrollbar,.requests-table::-webkit-scrollbar{
+    width: 10px;
+}
+.chats::-webkit-scrollbar-track,.contacts-table::-webkit-scrollbar-track,.requests-table::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px ;
+    border-radius: 15px;
+}
+.chats::-webkit-scrollbar-thumb,.contacts-table::-webkit-scrollbar-thumb,.requests-table::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 15px;
+}
+.chats::-webkit-scrollbar-thumb:hover,.contacts-table::-webkit-scrollbar-thumb:hover,.requests-table::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+.contact-lists,.checkup-lists,.request-list{
+   padding: .5rem;
+}
+.checkup-lists h4,
+.checkup-lists p,
+.contact-lists h4,
+.contact-lists p,
+.request-list h4,
+.request-list p{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.dp{
+    float: left;
+}
+.right-col,.action{
+    float: right;
+}
+.checkup-lists .right-col,.svg{
+    position: relative;
+    top: -1em;
+}
+.svg{
+    border: 1px solid #333333;
+    border-radius: 5px;
+    padding: .6rem .4rem;
+    float: right;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem;
+}
+.title span a{
+    color: #48d5b3;
+    font-weight: normal;
+}
+#accepted{
+    padding: .5rem .8rem;
+}
+.date_time{
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+}
+.container .title{
+    padding-top: .6rem;
+}
+.admin{
+   display: flex;
+}
+.admin svg{
+    margin-right: .5rem;
+    position: relative;
+    bottom: .5em;
+}
+.chats{
+    overflow-y: scroll;
+}
+/* admin-chat section */
+.admin-chat{
+    width: 20rem;
+    margin: 1em 0;
+}
+.admin-chat .message{
+    background-color: #303A5F;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 2.5em;
+    word-wrap: break-word;
+    padding: .8rem 1rem .8rem .5rem;
+    
+}
+.admin-chat p{
+    margin-left: 4em;
+    margin-top: .3em;
+}
+.doctor-chat{
+    width: 20rem;
+    margin: 1em .5em 1em auto;
+    padding-bottom: 2rem;
+}
+.doctor-chat .message{
+    background-color: #EAEBEF;
+    border-radius: 10px;
+    padding: .8rem 0 .8rem .5rem;
+    margin-right: 2.5em;
+}
+.chats .message h5{
+    font-weight: 400;
+    font-size: 18px;
+}
+.doctor-chat .tym{
+    margin-right: 4em;
+
+}
+.doctor-chat .tym{
+    float: right;
+    padding-top: .5rem;
+}
+.doctor-chat svg,#chat-input svg{
+    float: right;
+}
+#chat-input{
+    padding: .5rem .5rem;
+}
+input{
+    border: none;
+    font-size: 18px;
+    margin-left: 1em;
+    width: 22rem;
+    outline: none;
+}
